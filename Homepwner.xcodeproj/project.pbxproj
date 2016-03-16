@@ -12,6 +12,9 @@
 		DCFEFB431C9906E300066BB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFEFB411C9906E300066BB1 /* Main.storyboard */; };
 		DCFEFB451C9906E300066BB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCFEFB441C9906E300066BB1 /* Assets.xcassets */; };
 		DCFEFB481C9906E300066BB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFEFB461C9906E300066BB1 /* LaunchScreen.storyboard */; };
+		DCFEFB541C99080400066BB1 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFEFB531C99080400066BB1 /* ItemsViewController.swift */; };
+		DCFEFB561C99095800066BB1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFEFB551C99095800066BB1 /* Item.swift */; };
+		DCFEFB581C99202800066BB1 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFEFB571C99202800066BB1 /* ItemStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		DCFEFB441C9906E300066BB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCFEFB471C9906E300066BB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCFEFB491C9906E300066BB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCFEFB531C99080400066BB1 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		DCFEFB551C99095800066BB1 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		DCFEFB571C99202800066BB1 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +62,13 @@
 			children = (
 				DCFEFB3D1C9906E300066BB1 /* AppDelegate.swift */,
 				DCFEFB3F1C9906E300066BB1 /* ViewController.swift */,
+				DCFEFB531C99080400066BB1 /* ItemsViewController.swift */,
 				DCFEFB411C9906E300066BB1 /* Main.storyboard */,
 				DCFEFB441C9906E300066BB1 /* Assets.xcassets */,
 				DCFEFB461C9906E300066BB1 /* LaunchScreen.storyboard */,
 				DCFEFB491C9906E300066BB1 /* Info.plist */,
+				DCFEFB551C99095800066BB1 /* Item.swift */,
+				DCFEFB571C99202800066BB1 /* ItemStore.swift */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -135,7 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCFEFB561C99095800066BB1 /* Item.swift in Sources */,
 				DCFEFB401C9906E300066BB1 /* ViewController.swift in Sources */,
+				DCFEFB541C99080400066BB1 /* ItemsViewController.swift in Sources */,
+				DCFEFB581C99202800066BB1 /* ItemStore.swift in Sources */,
 				DCFEFB3E1C9906E300066BB1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
