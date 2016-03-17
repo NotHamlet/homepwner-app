@@ -15,6 +15,12 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var valueField: UITextField!
     @IBOutlet var dateLabel: UILabel!
     
+    
+    @IBAction func backgroundTapped(sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
+    
     var item: Item! {
         didSet {
             navigationItem.title = item.name
@@ -63,11 +69,17 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // If the segue is being made to a DateChangeViewController...
+        if segue.identifier == "ShowDatePicker" {
+            // Set the item for that view controller using the current Item
+            let newView = segue.destinationViewController as! DateChangeViewController
+            newView.item = item
+        }
+    }
+    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
-    }
-    @IBAction func backgroundTapped(sender: UITapGestureRecognizer) {
-        view.endEditing(true)
     }
 }
