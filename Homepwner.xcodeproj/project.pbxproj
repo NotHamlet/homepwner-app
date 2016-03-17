@@ -15,6 +15,7 @@
 		DCFEFB541C99080400066BB1 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFEFB531C99080400066BB1 /* ItemsViewController.swift */; };
 		DCFEFB561C99095800066BB1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFEFB551C99095800066BB1 /* Item.swift */; };
 		DCFEFB581C99202800066BB1 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFEFB571C99202800066BB1 /* ItemStore.swift */; };
+		DCFEFB5A1C9A4E9B00066BB1 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFEFB591C9A4E9B00066BB1 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DCFEFB531C99080400066BB1 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		DCFEFB551C99095800066BB1 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		DCFEFB571C99202800066BB1 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		DCFEFB591C9A4E9B00066BB1 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				DCFEFB491C9906E300066BB1 /* Info.plist */,
 				DCFEFB551C99095800066BB1 /* Item.swift */,
 				DCFEFB571C99202800066BB1 /* ItemStore.swift */,
+				DCFEFB591C9A4E9B00066BB1 /* ItemCell.swift */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 			files = (
 				DCFEFB561C99095800066BB1 /* Item.swift in Sources */,
 				DCFEFB401C9906E300066BB1 /* ViewController.swift in Sources */,
+				DCFEFB5A1C9A4E9B00066BB1 /* ItemCell.swift in Sources */,
 				DCFEFB541C99080400066BB1 /* ItemsViewController.swift in Sources */,
 				DCFEFB581C99202800066BB1 /* ItemStore.swift in Sources */,
 				DCFEFB3E1C9906E300066BB1 /* AppDelegate.swift in Sources */,
