@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC4281D41C9B12D600BD116A /* CustomBorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4281D31C9B12D600BD116A /* CustomBorderTextField.swift */; };
 		DCFEFB3E1C9906E300066BB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFEFB3D1C9906E300066BB1 /* AppDelegate.swift */; };
 		DCFEFB401C9906E300066BB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFEFB3F1C9906E300066BB1 /* ViewController.swift */; };
 		DCFEFB431C9906E300066BB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCFEFB411C9906E300066BB1 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC4281D31C9B12D600BD116A /* CustomBorderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBorderTextField.swift; sourceTree = "<group>"; };
 		DCFEFB3A1C9906E300066BB1 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFEFB3D1C9906E300066BB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCFEFB3F1C9906E300066BB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				DCFEFB551C99095800066BB1 /* Item.swift */,
 				DCFEFB571C99202800066BB1 /* ItemStore.swift */,
 				DCFEFB5B1C9A6C4E00066BB1 /* DetailViewController.swift */,
+				DC4281D31C9B12D600BD116A /* CustomBorderTextField.swift */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4281D41C9B12D600BD116A /* CustomBorderTextField.swift in Sources */,
 				DCFEFB561C99095800066BB1 /* Item.swift in Sources */,
 				DCFEFB401C9906E300066BB1 /* ViewController.swift in Sources */,
 				DCFEFB5A1C9A4E9B00066BB1 /* ItemCell.swift in Sources */,
@@ -304,6 +308,7 @@
 				DCFEFB4E1C9906E300066BB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
