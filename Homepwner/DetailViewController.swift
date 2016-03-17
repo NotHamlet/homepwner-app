@@ -8,25 +8,44 @@
 
 import UIKit
 
-class DetailViewController: UIViewController, UITextFieldDelegate {
+class DetailViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet var nameField: UITextField!
     @IBOutlet var serialNumberField: UITextField!
     @IBOutlet var valueField: UITextField!
     @IBOutlet var dateLabel: UILabel!
-    
-    
-    @IBAction func backgroundTapped(sender: UITapGestureRecognizer) {
-        view.endEditing(true)
-    }
-    
+    @IBOutlet var imageView: UIImageView!
     
     var item: Item! {
         didSet {
             navigationItem.title = item.name
         }
     }
+    var imageStore: ImageStore!
     
+    
+    @IBAction func backgroundTapped(sender: UITapGestureRecognizer) {
+        view.endEditing(true)
+    }
+    
+    @IBAction func takePicture(sender: UIBarButtonItem) {
+        
+        let imagePicker = UIImagePickerController()
+        
+        // If the device has a camera, take a picture; otherwise,
+        // just pick from the photo library
+        if UIImagePickerController.isSourceTypeAvailable(.Camera) {
+            imagePicker.sourceType = .Camera
+        }
+        else {
+            imagePicker.sourceType = .PhotoLibrary
+        }
+        
+        imagePicker.delegate = self
+        
+        // Place image picker on the screen
+        presentViewController(imagePicker, animated: true, completion: nil)
+    }
     let numberFormatter: NSNumberFormatter = {
        let formatter = NSNumberFormatter()
         formatter.numberStyle = .DecimalStyle
@@ -52,6 +71,13 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
         serialNumberField.text = item.serialNumber
         valueField.text = numberFormatter.stringFromNumber(item.valueInDollars)
         dateLabel.text = dateFormatter.stringFromDate(item.dateCreated)
+        
+        // Get the item's key
+        let key = item.itemKey
+        
+        // Get the image
+        let imageToDisplay = imageStore.imageForKey(key)
+        imageView.image = imageToDisplay
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -76,6 +102,22 @@ class DetailViewController: UIViewController, UITextFieldDelegate {
             let newView = segue.destinationViewController as! DateChangeViewController
             newView.item = item
         }
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        
+        // Get picked image from info dictionary
+        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        
+        // Put that image on the screen in the image view
+        imageView.image = image
+        
+        // Store the image in the ImageStore for the item's key
+        imageStore.setImage(image, forKey: item.itemKey)
+        
+        // Take image picker off the screen -
+        // you must call this dismiss method
+        dismissViewControllerAnimated(true, completion: nil)
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {

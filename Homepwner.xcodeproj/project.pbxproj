@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC33D6741C9B3731008958B6 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC33D6731C9B3731008958B6 /* ImageStore.swift */; };
 		DC4281D41C9B12D600BD116A /* CustomBorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4281D31C9B12D600BD116A /* CustomBorderTextField.swift */; };
 		DC4281D61C9B166B00BD116A /* DateChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4281D51C9B166B00BD116A /* DateChangeViewController.swift */; };
 		DCFEFB3E1C9906E300066BB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFEFB3D1C9906E300066BB1 /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC33D6731C9B3731008958B6 /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		DC4281D31C9B12D600BD116A /* CustomBorderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBorderTextField.swift; sourceTree = "<group>"; };
 		DC4281D51C9B166B00BD116A /* DateChangeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateChangeViewController.swift; sourceTree = "<group>"; };
 		DCFEFB3A1C9906E300066BB1 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +83,7 @@
 				DCFEFB5B1C9A6C4E00066BB1 /* DetailViewController.swift */,
 				DC4281D31C9B12D600BD116A /* CustomBorderTextField.swift */,
 				DC4281D51C9B166B00BD116A /* DateChangeViewController.swift */,
+				DC33D6731C9B3731008958B6 /* ImageStore.swift */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				DC4281D61C9B166B00BD116A /* DateChangeViewController.swift in Sources */,
 				DC4281D41C9B12D600BD116A /* CustomBorderTextField.swift in Sources */,
 				DCFEFB561C99095800066BB1 /* Item.swift in Sources */,
+				DC33D6741C9B3731008958B6 /* ImageStore.swift in Sources */,
 				DCFEFB401C9906E300066BB1 /* ViewController.swift in Sources */,
 				DCFEFB5A1C9A4E9B00066BB1 /* ItemCell.swift in Sources */,
 				DCFEFB541C99080400066BB1 /* ItemsViewController.swift in Sources */,
