@@ -67,13 +67,13 @@
 				DCFEFB3D1C9906E300066BB1 /* AppDelegate.swift */,
 				DCFEFB3F1C9906E300066BB1 /* ViewController.swift */,
 				DCFEFB531C99080400066BB1 /* ItemsViewController.swift */,
+				DCFEFB591C9A4E9B00066BB1 /* ItemCell.swift */,
 				DCFEFB411C9906E300066BB1 /* Main.storyboard */,
 				DCFEFB441C9906E300066BB1 /* Assets.xcassets */,
 				DCFEFB461C9906E300066BB1 /* LaunchScreen.storyboard */,
 				DCFEFB491C9906E300066BB1 /* Info.plist */,
 				DCFEFB551C99095800066BB1 /* Item.swift */,
 				DCFEFB571C99202800066BB1 /* ItemStore.swift */,
-				DCFEFB591C9A4E9B00066BB1 /* ItemCell.swift */,
 				DCFEFB5B1C9A6C4E00066BB1 /* DetailViewController.swift */,
 			);
 			path = Homepwner;
